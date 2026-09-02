@@ -1,0 +1,8 @@
+#content{
+    border-radius: 2vh;
+}
+#login-container{
+    border-radius: 2vh;
+    z-index: 1;
+    position: relative;
+}

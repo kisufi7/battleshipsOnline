@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Battleships</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: #afce8b">
+<div style="margin:25vh"></div>
+
+<div id="login-container" style="margin: 0vh 70vh; padding: 2vh 2vh; border: 3vh solid #c6e59a;background-color: #fefaf7">
+<div class="container">
+    <div class="d-flex justify-content-center">Login</div>
+</div>
+</div>
+
+<div id="content" style="margin: -7vh 30vh; padding: 7vh 3vh; border: 3vh solid #c6e59a;background-color: #fefaf7">
+    <div class="container ">
+        <div class="row">
+            <div class="col-4 offset-2">
+            <label class="col-form-label" for="nameInput">Name:</label>
+            </div>
+            <div class="col-3">
+            <input class=" form-control" id="nameInput" required>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 2vh">
+            <div class="col-4 offset-2">
+                <label class="col-form-label" for="passwordInput">Password:</label>
+            </div>
+            <div class="col-3" >
+                <input class=" form-control" id="passwordInput" minlength="8" required>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 5vh">
+            <div class="col-2 offset-6"> <button type="button" >register</button> </div>
+            <div class="col-2"> <button type="button" >login</button> </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
