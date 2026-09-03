@@ -2,24 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Battleships</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: #afce8b">
+
+<div style="margin-top: 10%"></div>
+
+<div id="login-container" class="maincontent">
     <div class="container">
-        <div class="row">
-            <div class="col"> mitte links</div>
-            <div class="col"> mitte rechts</div>
-        </div>
-        <div class="row">
-            <div class="col">links</div>
-            <div class="col">mitte</div>
-            <div class="col">rechts</div>
-        </div>
+        <div class="d-flex justify-content-center">Register</div>
     </div>
+</div>
+
+<div id="content">
+    <div class="container ">
+        <form>
+            <div class="row">
+                <div class="col-2 col-md-3 col-xl-4 offset-xl-2">
+                    <label class="col-form-label" for="nameInput">Name:</label>
+                </div>
+                <div class="offset-1 col-7 col-xl-5 col-md-8  offset-1 offset-md-1 offset-xl-1">
+                    <input class=" form-control" style="font-size: 2vh" id="nameInput" required>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 2vh">
+                <div class="col-2 col-md-3 col-xl-4 offset-xl-2">
+                    <label class="col-form-label" for="passwordInput">Password:</label>
+                </div>
+                <div class="offset-1 col-7 col-xl-5 col-md-8  offset-1 offset-md-1 offset-xl-1" >
+                    <input class=" form-control" id="passwordInput" style="font-size: 2vh" minlength="8" required>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5vh">
+                <div class="col-md-3 offset-md-3 col-3"> <a href="register.html" type="button" >register</a> </div>
+                <div class="col-md-3  col-3 offset-1"> <button type="submit" >login</button> </div>
+            </div>
+        </form>
+    </div>
+</div>
 
 </body>
 </html>

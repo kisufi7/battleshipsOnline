@@ -1,3 +1,13 @@
+@font-face {
+    font-family: project-font;
+    src: url("Aka-AcidGR-Freefeel.ttf.woff");
+}
+
+*{
+    font-family: project-font;
+    font-size: 3.5vh;
+}
+
 #content{
     border-radius: 2vh;
 }
@@ -5,4 +15,49 @@
     border-radius: 2vh;
     z-index: 1;
     position: relative;
+    margin: 0vh 50vh;
+    padding: 2vh 2vh;
+    border: 3vh solid #c6e59a;
+    background-color: #fefaf7;
+}
+
+#content{
+    margin: -7vh 30vh; padding: 7vh 3vh; border: 3vh solid #c6e59a;background-color: #fefaf7
+}
+
+a{
+    background-color: #ff8bc2;
+    color: #fefaf7;
+    border: 1vh solid #ffbaf1;
+    border-radius: 1vh;
+    padding: 0.5vh 1vh;
+    text-decoration: none;
+}
+
+button{
+    background-color: #ff8bc2;
+    color: #fefaf7;
+    border: 1vh solid #ffbaf1;
+    border-radius: 1vh;
+    padding: 0.5vh 1vh;
+    text-decoration: none;
+}
+
+@media(max-width: 1024px){
+    #login-container{
+        margin: 10vh 10vh;
+        font-size: 4vh;
+    }
+    #content{
+        margin: 2vh;
+        margin-top: -17vh;
+        font-size: 3vh;
+        padding: 5vh 1vh;
+        padding-top: 10vh
+    }
+    input{
+        min-width: 100px;
+        min-height: 3vh;
+    }
+
 }

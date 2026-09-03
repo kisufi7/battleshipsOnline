@@ -7,36 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: #afce8b">
-<div style="margin:25vh"></div>
 
-<div id="login-container" style="margin: 0vh 70vh; padding: 2vh 2vh; border: 3vh solid #c6e59a;background-color: #fefaf7">
+<div style="margin-top: 10%"></div>
+
+<div id="login-container" class="maincontent">
 <div class="container">
-    <div class="d-flex justify-content-center">Login</div>
+    <div class="d-flex justify-content-center">Register</div>
 </div>
 </div>
 
-<div id="content" style="margin: -7vh 30vh; padding: 7vh 3vh; border: 3vh solid #c6e59a;background-color: #fefaf7">
+<div id="content">
     <div class="container ">
+        <form>
         <div class="row">
-            <div class="col-4 offset-2">
+            <div class="col-2 col-md-3 col-xl-4 offset-xl-2">
             <label class="col-form-label" for="nameInput">Name:</label>
             </div>
-            <div class="col-3">
-            <input class=" form-control" id="nameInput" required>
+            <div class="offset-1 col-7 col-xl-5 col-md-8  offset-1 offset-md-1 offset-xl-1">
+            <input class=" form-control" style="font-size: 2vh" id="nameInput" required>
             </div>
         </div>
         <div class="row" style="margin-top: 2vh">
-            <div class="col-4 offset-2">
+            <div class="col-2 col-md-3 col-xl-4 offset-xl-2">
                 <label class="col-form-label" for="passwordInput">Password:</label>
             </div>
-            <div class="col-3" >
-                <input class=" form-control" id="passwordInput" minlength="8" required>
+            <div class="offset-1 col-7 col-xl-5 col-md-8  offset-1 offset-md-1 offset-xl-1" >
+                <input class=" form-control" id="passwordInput" style="font-size: 2vh" minlength="8" required>
             </div>
         </div>
         <div class="row" style="margin-top: 5vh">
-            <div class="col-2 offset-6"> <button type="button" >register</button> </div>
-            <div class="col-2"> <button type="button" >login</button> </div>
+            <div class="col-md-3 offset-md-3 col-3"> <a href="login.html" type="button" >login</a> </div>
+            <div class="col-md-3  col-3 offset-1"> <button type="submit" >register</button> </div>
         </div>
+        </form>
     </div>
 </div>
 
