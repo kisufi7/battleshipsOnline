@@ -43,10 +43,10 @@ button{
     text-decoration: none;
 }
 
-@media(max-width: 1024px){
+@media(max-width: 870px){
     #login-container{
-        margin: 10vh 10vh;
-        font-size: 4vh;
+        margin: 10vh 10vw;
+        font-size: 2vh;
     }
     #content{
         margin: 2vh;
@@ -55,9 +55,13 @@ button{
         padding: 5vh 1vh;
         padding-top: 10vh
     }
-    input{
+    input {
         min-width: 100px;
-        min-height: 3vh;
+        min-height: 5vh;
     }
 
+    *{
+        font-family: project-font;
+        font-size: 2vh;
+    }
 }
