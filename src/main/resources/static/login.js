@@ -3,14 +3,18 @@ const passwordEL = document.getElementById("passwordInput");
 const loginForm = document.getElementById("loginForm");
 const errorEL = document.getElementById("loginerror");
 
+
 async function login(){
     const userName = userNameEL.value;
     const password = passwordEL.value;
+    const URL = "/api/login";
 
     try{
-        const response = await fetch("/api/login", {
+        console.log(`API request sent to address ${URL}`);
+        const response = await fetch(URL, {
             method : "POST",
             headers: {}
+
             
         })
     }
