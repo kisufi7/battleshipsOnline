@@ -5,12 +5,12 @@ import jakarta.persistence.*;
 public class UserDTO {
 
     private Long id;
-    private String userName;
+    private String username;
     private String password;
 
     public UserDTO(Long id, String userName, String password) {
         this.id = id;
-        this.userName = userName;
+        this.username = userName;
         this.password = password;
     }
 
@@ -19,7 +19,7 @@ public class UserDTO {
     }
 
     public String getUserName() {
-        return userName;
+        return username;
     }
 
     public Long getId() {
