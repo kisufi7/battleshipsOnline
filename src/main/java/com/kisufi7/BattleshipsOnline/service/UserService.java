@@ -3,11 +3,13 @@ package com.kisufi7.BattleshipsOnline.service;
 import com.kisufi7.BattleshipsOnline.entity.Users;
 import com.kisufi7.BattleshipsOnline.dto.UserDTO;
 import com.kisufi7.BattleshipsOnline.repository.UserRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import jakarta.transaction.Transactional;
 
 @Service
+@Slf4j
 public class UserService {
 
     private final UserRepository userRepository;
@@ -19,7 +21,7 @@ public class UserService {
     }
 
     public Boolean login(String username, String password){
-        System.out.println("Anfrage ist im Service");
+        log.info("Anfrage ist im Service");
         if(userRepository.findByUsernameAndPassword(username,password).isEmpty()){
             return false;}
         else return true;

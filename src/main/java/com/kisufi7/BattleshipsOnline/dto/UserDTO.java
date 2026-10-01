@@ -1,24 +1,22 @@
 package com.kisufi7.BattleshipsOnline.dto;
 
-import jakarta.persistence.*;
-
 public class UserDTO {
 
     private Long id;
     private String username;
     private String password;
 
-    public UserDTO(Long id, String userName, String password) {
+    public UserDTO(Long id, String username, String password) {
         this.id = id;
-        this.username = userName;
+        this.username = username;
         this.password = password;
     }
 
-    public String getPassword() {
+    public String getpassword() {
         return password;
     }
 
-    public String getUserName() {
+    public String getuserName() {
         return username;
     }
 

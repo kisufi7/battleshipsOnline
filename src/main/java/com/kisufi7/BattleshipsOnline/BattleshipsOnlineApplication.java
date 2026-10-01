@@ -21,6 +21,7 @@ public class BattleshipsOnlineApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BattleshipsOnlineApplication.class, args);
+		System.out.println("Commandline works");
 	}
 
 }

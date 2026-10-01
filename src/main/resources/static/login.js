@@ -15,11 +15,16 @@ async function login(){
             method : "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({username,password})  //das mal ohne json.stringify probieren aus interesse
-        })
+        });
+        const responseDebugText = await response.text();
+        console.log(responseDebugText);
         if(response.ok){
             HTMLresponse.innerText= "login successful";
         }
-        else HTMLresponse.innerText= "login failed. please check password and/or username";
+        else {
+            const badresp = response.statusText;
+            HTMLresponse.innerText= `login failed. please check password and/or username. Problem may be: ${badresp}`;
+        }
 
 
     }
