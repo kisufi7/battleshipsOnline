@@ -21,6 +21,16 @@
     background-color: #fefaf7;
 }
 
+#register-container{
+    border-radius: 2vh;
+    z-index: 1;
+    position: relative;
+    margin: 0vh 50vh;
+    padding: 2vh 2vh;
+    border: 3vh solid #c6e59a;
+    background-color: #fefaf7;
+}
+
 #content{
     margin: -7vh 30vh; padding: 7vh 3vh; border: 3vh solid #c6e59a;background-color: #fefaf7
 }

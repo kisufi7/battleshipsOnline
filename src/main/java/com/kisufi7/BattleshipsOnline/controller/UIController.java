@@ -31,4 +31,9 @@ public class UIController {
          }
 
     }
+
+    @PostMapping("/register")
+    public ResponseEntity<String> register(@RequestBody UserDTO userDTO){
+        /**TODO: implement**/
+    }
 }
