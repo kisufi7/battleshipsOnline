@@ -14,16 +14,25 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-
-    //constructor injection
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
     public Boolean login(String username, String password){
-        log.info("Anfrage ist im Service");
         if(userRepository.findByUsernameAndPassword(username,password).isEmpty()){
             return false;}
+        else return true;
+        }
+
+        public Boolean register(String username, String password){
+        Users user = new Users();
+        user.setId(null);
+        user.setUserName(username);
+        user.setPassword(password);
+        userRepository.save(user);
+        if (user.getId().equals(null)){
+            return false;
+        }
         else return true;
         }
 

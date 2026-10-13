@@ -2,7 +2,6 @@ package com.kisufi7.BattleshipsOnline.dto;
 
 public class UserDTO {
 
-    /** TODO: DTO und Nutzung dieser in Doku**/
     private final Long id;
     private final String username;
     private final String password;
@@ -17,7 +16,7 @@ public class UserDTO {
         return password;
     }
 
-    public String getuserName() {
+    public String getusername() {
         return username;
     }
 

@@ -2,16 +2,17 @@ package com.kisufi7.BattleshipsOnline.entity;
 
 import jakarta.persistence.*;
 
-/** TODO: Entity und Nutzung dieser in Doku**/
 @Entity
 @Table(name= "users")
 public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
     private Long id;
-    @Column
+    @Column(name = "username")
     private String username;
-    @Column
+
+    @Column(name = "password")
     private String password;
 
     public Users() {

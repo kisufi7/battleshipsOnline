@@ -58,6 +58,12 @@ button{
         margin: 10vh 10vw;
         font-size: 2vh;
     }
+    #register-container{
+        margin: 10vh 10vw;
+        font-size: 2vh;
+    }
+
+
     #content{
         margin: 2vh;
         margin-top: -17vh;

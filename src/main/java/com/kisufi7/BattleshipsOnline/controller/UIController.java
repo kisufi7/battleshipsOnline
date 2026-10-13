@@ -22,18 +22,23 @@ public class UIController {
 
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody UserDTO userDTO){
-        Boolean response = userService.login(userDTO.getuserName(), userDTO.getpassword());  //data sent over to service (i hope CI works properly)
+        Boolean response = userService.login(userDTO.getusername(), userDTO.getpassword());  //data sent over to service (i hope CI works properly)
          if(response){
              return new ResponseEntity<String>("Anfrage war positiv", HttpStatus.OK);
          }
          else{
-             return new ResponseEntity<String>("Anfrage war negativ, rasclaat",HttpStatus.BAD_REQUEST);
+             return new ResponseEntity<String>("Anfrage war negativ, rasclaat",HttpStatus.NOT_FOUND);
          }
 
     }
 
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody UserDTO userDTO){
-        /**TODO: implement**/
+        Boolean response = userService.register(userDTO.getusername(), userDTO.getpassword());
+        if(response){
+            return new ResponseEntity<String>("Speichern erfolgreich", HttpStatus.OK);
+        }
+        else return new ResponseEntity<String>("Speichern fehlgeschlagen", HttpStatus.NOT_IMPLEMENTED);
+
     }
 }
