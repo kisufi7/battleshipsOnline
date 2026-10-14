@@ -3,6 +3,14 @@
     src: url("Aka-AcidGR-Freefeel.ttf.woff");
 }
 
+#menucontainer{
+    margin: 20vh 50vh;
+    padding: 2vh 2vh;
+    border: 3vh solid #c6e59a;
+    border-radius: 2vh;
+    background-color: #fefaf7;
+}
+
 *{
     font-family: project-font;
     font-size: 3.5vh;
@@ -54,7 +62,7 @@ button{
 }
 
 @media(max-width: 870px){
-    #login-container{
+    #login-container {
         margin: 10vh 10vw;
         font-size: 2vh;
     }
@@ -80,4 +88,11 @@ button{
         font-family: project-font;
         font-size: 2vh;
     }
+    #menucontainer{
+        margin: 10vh;
+        font-size: 3vh;
+        padding: 5vh 1vh;
+        padding-top: 10vh
+    }
+
 }
