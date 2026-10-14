@@ -20,6 +20,9 @@ async function login(){
         console.log(responseDebugText);
         if(response.ok){
             HTMLresponse.innerText= "login successful";
+            console.log("yep, worked");
+            window.location.replace("menu.html");
+
         }
         else {
             const badresp = response.statusText;
@@ -33,6 +36,8 @@ async function login(){
         HTMLresponse.innerText = "an unknown error has occurred"; //praying that ts never gets called upon lol
 
     }
+
+
 
 }
 

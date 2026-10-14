@@ -20,6 +20,9 @@ async function register(){
         console.log(responseDebugText);
         if(response.ok){
             HTMLresponse.innerText= "register successful";
+            console.log("yep, worked");
+            window.location.replace("menu.html");
+
         }
         else {
             const badresp = response.statusText;
@@ -31,6 +34,9 @@ async function register(){
         HTMLresponse.innerText = "an unknown error has occurred"; //praying that ts never gets called lol
     }
 }
+
+
+
 loginForm.addEventListener("submit", (event) => {
     event.preventDefault();
     register();})
