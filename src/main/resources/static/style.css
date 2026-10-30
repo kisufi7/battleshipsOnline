@@ -98,6 +98,5 @@ button{
 }
 #oppboardcontainer{
     display: grid;
-    grid-auto-columns: 10;
-    grid-auto-rows: 10;
+    gap: 1px 1px;
 }
